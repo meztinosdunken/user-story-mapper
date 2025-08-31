@@ -4,9 +4,9 @@
   "description": "A web-based tool for creating and managing user stories in agile projects.",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "client": "cd client && npm start",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "start": "node server/index.js",  // starts the server
+    "client": "cd client && npm start",  // starts the client application
+    "dev": "concurrently \"npm run client\" \"npm run server\""  // runs both client and server in parallel
   },
   "dependencies": {
     "express": "^4.17.1",
