@@ -1,0 +1,20 @@
+{
+  "name": "user-story-mapper",
+  "version": "1.0.0",
+  "description": "A web-based tool for creating and managing user stories in agile projects.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently "npm run client" "npm run server""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "license": "MIT"
+}
